@@ -1,0 +1,107 @@
+:root {
+    --bg: #ffffff;
+    --text: #1c1c1c;
+    --accent: #007bff;
+    --input-bg: #f0f0f0;
+    --card-bg: #ffffff;
+}
+
+body.dark {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --accent: #00c2ff;
+    --input-bg: #2c2c2c;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: var(--input-bg);
+    border: none;
+    border-radius: 6px;
+    color: var(--text);
+}
+
+button {
+    width: 100%;
+    background: var(--accent);
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: darken(var(--accent), 10%);
+}
+
+.results {
+    margin-top: 1.5rem;
+    background: rgba(0, 255, 160, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    animation: fadeIn 0.4s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+.theme-toggle {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+#toggle-theme {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#toggle-theme:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

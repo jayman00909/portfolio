@@ -1,0 +1,158 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.theme-toggle {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.theme-btn {
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.theme-btn.active {
+    background-color: #0077ff;
+    color: #4a3535;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.handle {
+    color: gray;
+}
+
+.cta-buttons {
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #0077ff;
+    color: white;
+}
+
+.secondary {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.profile-stats div span {
+    display: block;
+    font-size: 0.85rem;
+    color: gray;
+}
+
+.profile-tabs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.tab.active {
+    background-color: #0077ff;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 1rem 0;
+     
+}
+
+.tab-content h2 {
+    margin-top: 0;
+}
+
+.tab-content.visible {
+    display: block;
+}
+
+.portfolio-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.portfolio-grid img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+blockquote {
+    border-left: 4px solid #0077ff;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+.socials a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}

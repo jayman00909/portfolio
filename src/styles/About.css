@@ -1,0 +1,53 @@
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(var(--space-6), 5vw, var(--space-7));
+  align-items: start;
+}
+
+.about__text p {
+  max-width: 38rem;
+  font-size: 1.05rem;
+}
+
+.about__text p + p {
+  margin-top: var(--space-4);
+}
+
+.about__skills {
+  padding: var(--space-5);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.about__skills h3 {
+  margin-bottom: var(--space-4);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.skills__group + .skills__group {
+  margin-top: var(--space-4);
+}
+
+.skills__group h4 {
+  margin: 0 0 var(--space-2);
+  color: var(--color-muted);
+  font: 600 0.8rem/1.3 var(--font-body);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Skill tags sit on a grey panel here, so give them a white background. */
+.about__skills .tags li {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="user-profile.css" />
+    
+</head>
+
+<body class="light-theme">
+    <div class="theme-toggle">
+        <button id="lightBtn" class="theme-btn active">Light Theme</button>
+        <button id="darkBtn" class="theme-btn">Dark Theme</button>
+    </div>
+    <div class="profile-container">
+        <header class="profile-header">
+            <img src="https://images.unsplash.com/photo-1502764613149-7f1d229e230f?auto=format&fit=crop&w=150&h=150&q=80"
+                alt="Profile Picture" class="profile-pic" />
+            <div class="profile-info">
+                <h1>Ada Ogunleye</h1>
+                <p class="handle">@ada</p>
+                <p class="bio">Digital Creator | Helping brands tell better stories through content and strategy.</p>
+                <p class="location">📍 Lagos, Nigeria</p>
+                <div class="cta-buttons">
+                    <button class="btn primary">Hire Me</button>
+                    <button class="btn secondary">Follow</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="profile-stats">
+            <div><strong>18.4k</strong><span>Followers</span></div>
+            <div><strong>87</strong><span>Projects</span></div>
+            <div><strong>80</strong><span>Reviews</span></div>
+        </section>
+
+        <nav class="profile-tabs">
+            <button class="tab active" data-tab="about">About</button>
+            <button class="tab" data-tab="portfolio">Portfolio</button>
+            <button class="tab" data-tab="testimonials">Testimonials</button>
+            <button class="tab" data-tab="contact">Contact</button>
+        </nav>
+
+        <section class="tab-content" id="about">
+            <h2>About Me</h2>
+            <p>I specialize in branding, visual storytelling, and content creation for businesses and individuals
+                looking to make a lasting impression online.</p>
+        </section>
+
+        <section class="tab-content hidden" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=400&h=300&q=80"
+                    alt="Project 1">
+                <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&h=300&q=80"
+                    alt="Project 2">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&h=300&q=80"
+                    alt="Project 3">
+            </div>
+        </section>
+
+        <section class="tab-content hidden" id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>“Ada is an exceptional content strategist who helped grow our brand exponentially.” – Client
+                A</blockquote>
+            <blockquote>“Her creative approach is unmatched. Highly recommended!” – Client B</blockquote>
+        </section>
+
+        <section class="tab-content hidden" id="contact">
+            <h2>Contact</h2>
+            <p>Email: ada@example.com</p>
+            <p>WhatsApp: +234 000 000 0000</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.linkedin.com/login">LinkedIn</a>
+                <a href="https://www.youtube.com/">YouTube</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+            </div>
+        </section>
+    </div>
+    <script defer src="user-profile.js"></script>
+</body>
+</html>

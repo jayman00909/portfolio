@@ -1,0 +1,52 @@
+.section {
+  padding: clamp(var(--space-7), 7vw, var(--space-8)) 0;
+}
+
+/* Alternate backgrounds give the page a clear rhythm. */
+.section--alt {
+  background: var(--color-surface);
+  border-block: 1px solid var(--color-border);
+}
+
+.section--dark {
+  background: var(--color-navy);
+  color: var(--color-on-dark);
+}
+
+.section__eyebrow {
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section--dark .section__eyebrow {
+  color: var(--color-highlight);
+}
+
+.section__title {
+  position: relative;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  font-weight: 800;
+}
+
+/* Short blue bar under every section title. */
+.section__title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3.5rem;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-primary);
+}
+
+.section--dark .section__title::after {
+  background: var(--color-highlight);
+}
+

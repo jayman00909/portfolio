@@ -1,0 +1,121 @@
+/* Base: resets, typography and small reusable pieces (container, buttons). */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-link);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-highlight);
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-4);
+  top: -4rem;
+  z-index: 100;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-primary);
+  color: var(--color-on-dark);
+  border-radius: var(--radius);
+}
+
+.skip-link:focus {
+  top: var(--space-3);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  font: 600 0.95rem/1.2 var(--font-body);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+/* Blue button for light backgrounds */
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-on-dark);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+/* Solid white button for navy backgrounds */
+.btn--light {
+  background: var(--color-on-dark);
+  color: var(--color-navy);
+}
+
+.btn--light:hover {
+  background: var(--color-tint);
+}
+
+/* Outlined white button for navy backgrounds */
+.btn--outline-light {
+  background: transparent;
+  color: var(--color-on-dark);
+  border-color: var(--color-on-dark-muted);
+}
+
+.btn--outline-light:hover {
+  border-color: var(--color-on-dark);
+  background: var(--color-navy-raised);
+}
