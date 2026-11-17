@@ -5,6 +5,12 @@ import '../styles/Contact.css'
 function Contact() {
   return (
     <Section id="contact" eyebrow="04" title="Contact" tone="dark">
+      <p className="contact__intro">
+        Have a project in mind, or think I could be a good fit for your team?
+        Send me an email or reach out through any of the links below. I'd be
+        glad to hear from you.
+      </p>
+
       <ul className="contact__list">
         <li>
           <span>Email</span>
@@ -17,7 +23,7 @@ function Contact() {
         <li>
           <span>LinkedIn</span>
           <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
-            Oluwadamilare Samuel
+            View my LinkedIn profile
           </a>
         </li>
         <li>
