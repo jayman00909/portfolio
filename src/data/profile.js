@@ -28,9 +28,9 @@ const profile = {
   ],
 
   about: [
-    "I'm a frontend developer with a degree in Software Engineering. I turn designs into responsive pages, forms and interactive tools, and I care about layout, spacing and readable code.",
-    'My final-year project, MCO, is a full-stack scheduling system that I built on my own. It taught me how a React interface connects to a real API and database, and how to take a project from an empty folder to a live deployment.',
-    "In 2025 I completed Data Quotient's Frontend Engineering programme and earned the Frontend Engineering Associate certification.",
+    "I'm a frontend developer and Software Engineering graduate who enjoys building websites that are clear, responsive and easy to use. I work mainly with HTML, CSS, JavaScript and React, and I pay attention to the details that make a page feel right, from its layout and spacing to how it works on a phone.",
+    'One of my biggest projects so far is MCO, a full-stack scheduling system I built for my final-year project. I handled the frontend, backend, database and scheduling logic myself. It gave me experience taking an idea from planning through development to deployment.',
+    "I also completed Data Quotient's Frontend Engineering programme in 2025, where I built pages from design references and strengthened my responsive development skills. I'm looking to keep growing as a developer while contributing to a team or helping clients bring their ideas online.",
   ],
 
   skills: [
