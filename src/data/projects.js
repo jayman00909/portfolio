@@ -26,7 +26,7 @@ export const featured = {
   links: [
     { label: 'Live demo', href: 'https://imcpss.vercel.app' },
     {
-      label: 'README and screenshots',
+      label: 'View source on GitHub',
       href: 'https://github.com/jayman00909/mco-scheduling-system',
     },
   ],
@@ -68,6 +68,10 @@ export const projects = [
     },
     links: [
       { label: 'Live demo', href: '/demos/loan-calculator/index.html' },
+      {
+        label: 'View code',
+        href: 'https://github.com/jayman00909/portfolio/tree/main/public/demos/loan-calculator',
+      },
     ],
   },
   {
@@ -84,6 +88,10 @@ export const projects = [
     },
     links: [
       { label: 'Live demo', href: '/demos/creator-profile/index.html' },
+      {
+        label: 'View code',
+        href: 'https://github.com/jayman00909/portfolio/tree/main/public/demos/creator-profile',
+      },
     ],
   },
   {
@@ -98,7 +106,13 @@ export const projects = [
       width: 1280,
       height: 800,
     },
-    links: [{ label: 'Live demo', href: '/demos/fylo/index.html' }],
+    links: [
+      { label: 'Live demo', href: '/demos/fylo/index.html' },
+      {
+        label: 'View code',
+        href: 'https://github.com/jayman00909/portfolio/tree/main/public/demos/fylo',
+      },
+    ],
   },
   {
     title: 'Credit Card Checkout Form',
@@ -114,6 +128,10 @@ export const projects = [
     },
     links: [
       { label: 'Live demo', href: '/demos/credit-card/index.html' },
+      {
+        label: 'View code',
+        href: 'https://github.com/jayman00909/portfolio/tree/main/public/demos/credit-card',
+      },
     ],
   },
 ]
