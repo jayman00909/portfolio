@@ -4,7 +4,7 @@ const profile = {
   name: 'Samuel Damilare Amos',
   role: 'Frontend Developer',
   intro:
-    'I build clean, responsive interfaces with HTML, CSS, JavaScript and React, turning designs into working pages, forms and interactive tools.',
+    "I'm Samuel, a frontend developer who works with HTML, CSS, JavaScript and React. I enjoy taking a design and turning it into a website that's easy to use on a phone or computer.",
   email: 'ssamueldamilare6@gmail.com',
   phone: '+234 810 295 9360',
   phoneLink: '+2348102959360',
