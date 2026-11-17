@@ -7,14 +7,14 @@ function Hero() {
       <div className="container hero__inner">
         <div className="hero__text">
           <p className="hero__eyebrow">{profile.role}</p>
-          <h1 id="hero-title">{profile.name}</h1>
+          <h1 id="hero-title">I build clean, responsive websites.</h1>
           <p className="hero__intro">{profile.intro}</p>
           <div className="hero__actions">
             <a className="btn btn--light" href="#projects">
-              View projects
+              See my work
             </a>
             <a className="btn btn--outline-light" href="#contact">
-              Contact me
+              Get in touch
             </a>
           </div>
         </div>
