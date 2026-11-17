@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samuel-amos.vercel.app/sitemap.xml
